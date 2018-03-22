@@ -12,11 +12,11 @@ describe("countWords", function() {
     expect(countWords("This is a sentence.")).toBe(4);
   });
 
-  it("should count an empty string as 0", function() {
+  it("should count an empty string as 0, but wrong", function() {
     expect(countWords("")).toBe(0);
   });
 
-  it("should ignore punctuation", function() {
+  it("should ignore punctuation, but wrong", function() {
     expect(countWords("this , that , hhahhaha")).toBe(3);
   });
 });
